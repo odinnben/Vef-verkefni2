@@ -51,6 +51,6 @@ def error404(error):
 
 @route('/static/<filename>')
 def server_static(filename):
-    return static_file(filename, root="./mYNDIR")
+    return static_file(filename, root="./myndir")
 
 run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
